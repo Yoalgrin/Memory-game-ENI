@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jouer</title>
+  
+</head>
+
+<body>
+
+  <h1>jeu Memory</h1>
+  <div id="Jouer"></div> 
+  <div class="memory-game"></div>
+<div id="theme-selector">
+  <h2>Choisissez un thème :</h2>
+  <button onclick="startGame('alphabetScrabble')">Animaux</button>
+  <button onclick="startGame('animaux')">Espace</button>
+  <button onclick="startGame('animauxAnimes')">Nourriture</button>
+  <button onclick="startGame('animauxdomestiques')">Nourriture</button>
+  <button onclick="startGame('chiens')">Nourriture</button>
+  <button onclick="startGame('dinosaures')">Nourriture</button>
+  <button onclick="startGame('dinosauresAvecNom')">Nourriture</button>
+  <button onclick="startGame('memoryLegume')">Nourriture</button>
+</div>
+
+<div id="game-board" style="display: none;">
+  <!-- Ton plateau de jeu ici -->
+</div>
+<script src="js/play.js"></script>
+</body>
+
+</html>

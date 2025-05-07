@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projet jeux memory ENI</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <header class="header">
+      <div class="header-bg"></div>
+      <div class="header-content">
+        <h1>Memory game - ENI Project</h1>
+      </div>
+    </header>
+    <div class="container">
+      <h2 class="text-2xl font-semibold mb-4">
+        Règle: Toutes les cartes sont faces cachées. Le joueur retourne deux cartes
+        sur les douze. <br />
+        Si les images sont identiques, il gagne la paire constituée et rejoue.</br>
+        <br />
+        Sinon les cartes se retournent et le joueur doit en chosir 2 autres. La
+        partie se termine quand toutes les cartes sont retournées.</br>
+      </h2>
+    </div>
+    <nav class="bg-gray-900 text-white py-4">
+      <div class="container mx-auto">
+        <ul class="flex justify-center gap-8">
+          <li><a href="index.html" id="homePage" class="hover:text-gray-300">Accueil</a></li>
+          <li><a href="signUp.html" id="signUp" class="hover:text-gray-300">S'inscrire</a></li>
+          <li><a href="signIn.html" id="signIn" class="hover:text-gray-300">Se connecter</a></li>
+          <li><a href="Profil.html" id="profil" class="hover:text-gray-300">Profil</a></li>
+          <li id="play-link"><a href="play.html" id="play" class="hover:text-gray-300">Jouer</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p id="message" style="color: red; font-weight: bold;" class="message-error"></p>
+     <main class="container mx-auto p-6" id="content"></main>
+
+    <footer class="bg-white border-t p-4 mt-12">
+      <div class="container mx-auto text-center text-sm text-gray-500">
+        © 2025 Yoalgrin. Tous droits réservés.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <p id="message-text" style="color: red; font-weight: bold;"></p>
+  </body>
+</html>
