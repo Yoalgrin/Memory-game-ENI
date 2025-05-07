@@ -1,0 +1,10 @@
+#theme-selector {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#theme-selector button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+}

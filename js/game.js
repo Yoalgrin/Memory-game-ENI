@@ -16,7 +16,9 @@ const face = { nom: "FG", images: "FG.jpg" };
 let allCards = [];
 
 // Pour chaque animal, on ajoute deux cartes identiques dans le tableau (une paire).
-// On utilise {...animal} (spreadOperator) pour copier l'objet (bonne pratique, à réutiliser).
+/* le spread Operator (ex: {...animal} permet de décomposer un objet ou un tableau en ses éléments individuels. 
+Permet de les manipuler de manière plus concise et flexible)
+(bonne pratique, à réutiliser).*/
 animaux.forEach((animal) => {
   allCards.push({ ...animal }, { ...animal });
 });
