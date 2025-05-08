@@ -6,11 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
     event.preventDefault(); // Empêche l'envoi du formulaire
 
     const nom = document.getElementById("nom").value.trim();
+    const prenom = document.getElementById("prenom").value.trim();
+    const pseudo = document.getElementById("pseudo").value.trim();
     const email = document.getElementById("email").value.trim();
     const motdepasse = document.getElementById("motdepasse").value;
     const confirmer = document.getElementById("confirmer").value;
 
-    if (!nom || !email || !motdepasse || !confirmer) {
+    if (!nom || !prenom || !pseudo || !email || !motdepasse || !confirmer) {
       message.textContent = "Veuillez remplir tous les champs.";
       message.style.color = "red";
       return;
